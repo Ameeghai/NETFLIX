@@ -126,4 +126,4 @@ Netflix has transitioned from rapid expansion to a more optimized content strate
 
 Amee Ghai
 B.S. Physics, IIT Jodhpur
-Interested in Business Analytics, Data Analysis, and Strategy
+
