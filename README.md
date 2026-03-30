@@ -121,6 +121,14 @@ Netflix has transitioned from rapid expansion to a more optimized content strate
 * `README.md` → Project documentation
 
 ---
+## Data Source
+
+The dataset used in this project is publicly available and was originally provided by Netflix for analysis purposes. It contains information about movies and TV shows available on the platform, including metadata such as genre, country, release year, and date added.
+
+Source: Netflix Movies and TV Shows Dataset (commonly available on platforms such as Kaggle)
+
+Note: This project uses the dataset solely for educational and analytical purposes. All rights belong to the original data provider.
+
 
 ## Author
 
