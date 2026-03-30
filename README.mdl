@@ -1,1 +1,81 @@
+Netflix Content Strategy & Market Analysis
 
+This project presents a comprehensive end-to-end analysis of Netflix’s content library, combining data analysis, visualization, and business interpretation to understand platform growth, content strategy, and regional behavior.
+
+The analysis is performed using Python in a Jupyter Notebook and translated into business insights through a structured presentation.
+
+Objective
+
+The objective of this project is to analyze the evolution of Netflix’s content ecosystem and derive actionable insights related to:
+
+Platform growth and content expansion
+Strategic balance between Movies and TV Shows
+Content consumption patterns (duration and seasons)
+Genre distribution and audience targeting
+Country-wise content strategies and localization
+Dataset
+Source: Netflix dataset (Kaggle)
+Size: ~8000+ titles
+Features include: type, genre, country, release year, duration, rating
+
+The dataset enables both temporal and categorical analysis of Netflix’s global content library.
+
+Project Components
+1. Data Analysis (Jupyter Notebook)
+
+The notebook covers:
+
+Data cleaning and preprocessing
+Handling missing values and inconsistencies in columns such as country, rating, and duration
+Feature extraction (year-wise trends, content type separation, duration parsing, season counts)
+Exploratory Data Analysis (EDA)
+Visualization using Python libraries
+
+This ensures that all insights are reproducible and grounded in data.
+
+2. Business Analysis (Presentation)
+
+The PPT summarizes findings into structured insights across four major areas:
+
+Platform Growth & Lifecycle
+Content volume increased by approximately 5x after 2016, indicating aggressive expansion
+Peak content addition occurred during 2018–2019
+Post-2020 decline reflects both COVID-19 production disruptions and a transition toward market maturity and content optimization
+Content Strategy & User Behavior
+Movies dominate the platform catalog and support user acquisition
+TV Shows contribute significantly to long-term user retention
+Most movies fall within the 90–110 minute range, indicating quick consumption preference
+TV Shows are typically 1–3 seasons, making them highly binge-friendly
+Market & Audience Strategy
+Content is heavily focused on mature audiences (TV-MA, TV-14 dominate)
+International Movies and Drama are the most prominent genres globally
+Genre preferences vary significantly by region, highlighting the importance of localization
+Country-wise Strategy
+United States: Strong growth in both Movies and TV Shows → maintain balanced strategy
+India: Movie-dominated market with underdeveloped TV segment → opportunity for expansion
+United Kingdom: Strong TV Show growth → expand serialized content
+Canada: Smaller but stable growth → balanced content investment
+Key Quantitative Insights
+Content library expanded by ~5x after 2016
+Peak additions occurred in 2018–2019
+Movies significantly outnumber TV Shows in the catalog
+Majority of movies are within 90–110 minutes
+TV Shows are predominantly 1–3 seasons
+COVID-19 Impact Analysis
+The decline in content addition post-2020 is partly due to global production disruptions caused by COVID-19
+Film and TV production pipelines were delayed, reducing new releases
+Despite increased streaming demand, content supply temporarily slowed
+This period also marks a shift from aggressive expansion to content optimization strategies
+Business Insights & Strategic Recommendations
+Transition from expansion to content optimization post-2020
+Maintain a balanced portfolio to support both user acquisition (Movies) and retention (TV Shows)
+Invest in region-specific content to align with local preferences
+Expand TV Show production in high-retention markets
+Use genre and rating insights for targeted content development
+Tech Stack
+Python
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Jupyter Notebook
