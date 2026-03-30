@@ -1,163 +1,129 @@
-# Netflix Content Strategy & Market Analysis
+# Netflix Content Strategy Analysis
 
-This project presents a comprehensive end-to-end analysis of Netflix’s content library, combining data analysis, visualization, and business interpretation to understand platform growth, content strategy, and regional behavior.
+## Overview
 
-The analysis is performed using Python in a Jupyter Notebook and translated into business insights through a structured presentation.
+This project analyzes Netflix’s content library to understand its content strategy, growth patterns, and distribution across time, genres, and countries. The analysis is based on a publicly available dataset of Netflix titles and focuses on extracting business insights from content availability data.
 
 ---
 
 ## Objective
 
-The objective of this project is to analyze the evolution of Netflix’s content ecosystem and derive actionable insights related to:
+The goal of this project is to answer the following key questions:
 
-- Platform growth and content expansion  
-- Strategic balance between Movies and TV Shows  
-- Content consumption patterns (duration and seasons)  
-- Genre distribution and audience targeting  
-- Country-wise content strategies and localization  
+* How has Netflix’s content library grown over time?
+* What is the distribution between Movies and TV Shows?
+* Which genres and ratings dominate the platform?
+* How does content vary across countries?
+* What strategic insights can be derived from content distribution?
 
 ---
 
 ## Dataset
 
-- Source: Netflix dataset (Kaggle)  
-- Size: ~8000+ titles  
-- Features include: type, genre, country, release year, duration, rating  
+The dataset contains information about Netflix titles, including:
 
-The dataset enables both temporal and categorical analysis of Netflix’s global content library.
-
----
-
-## Project Components
-
-### 1. Data Analysis (Jupyter Notebook)
-
-The notebook covers:
-
-- Data cleaning and preprocessing  
-- Handling missing values and inconsistencies in columns such as country, rating, and duration  
-- Feature extraction (year-wise trends, content type separation, duration parsing, season counts)  
-- Exploratory Data Analysis (EDA)  
-- Visualization using Python libraries  
-
-This ensures that all insights are reproducible and grounded in data.
+* Title
+* Type (Movie / TV Show)
+* Date Added
+* Release Year
+* Country
+* Genre (Listed In)
+* Rating
+* Duration
 
 ---
 
-### 2. Business Analysis (Presentation)
+## Data Cleaning & Preprocessing
 
-The PPT summarizes findings into structured insights across four major areas:
+The dataset required several preprocessing steps before analysis:
 
-#### Platform Growth & Lifecycle
-- Content volume increased by approximately 5x after 2016, indicating aggressive expansion  
-- Peak content addition occurred during 2018–2019  
-- Post-2020 decline reflects both COVID-19 production disruptions and a transition toward market maturity and content optimization  
-
-#### Content Strategy & User Behavior
-- Movies dominate the platform catalog and support user acquisition  
-- TV Shows contribute significantly to long-term user retention  
-- Most movies fall within the 90–110 minute range, indicating quick consumption preference  
-- TV Shows are typically 1–3 seasons, making them highly binge-friendly  
-
-#### Market & Audience Strategy
-- Content is heavily focused on mature audiences (TV-MA, TV-14 dominate)  
-- International Movies and Drama are the most prominent genres globally  
-- Genre preferences vary significantly by region, highlighting the importance of localization  
-
-#### Country-wise Strategy
-- United States: Balanced growth in Movies and TV Shows  
-- India: Movie-dominated market with opportunity for TV expansion  
-- United Kingdom: Strong TV Show growth potential  
-- Canada: Smaller but steady growth across both categories  
+* Converted `date_added` to datetime format using safe parsing
+* Extracted `year_added` for time-based analysis
+* Handled missing values in key columns such as `date_added` and `country`
+* Split and exploded multi-value columns (e.g., country, genre)
+* Standardized column names for consistency
 
 ---
 
-## Key Quantitative Insights
+## Exploratory Data Analysis
 
-- Content library expanded by approximately 5x after 2016  
-- Peak additions occurred in 2018–2019  
-- Movies significantly outnumber TV Shows in the catalog  
-- Majority of movies are within the 90–110 minute duration range  
-- TV Shows are predominantly 1–3 seasons  
+### Content Growth Over Time
 
----
+Netflix experienced rapid expansion in content additions between 2016 and 2019, followed by stabilization post-2020.
 
-## COVID-19 Impact Analysis
+### Movies vs TV Shows
 
-- The decline in content addition post-2020 is partly due to global production disruptions caused by COVID-19  
-- Film and TV production pipelines were delayed, reducing new releases  
-- Despite increased streaming demand, content supply temporarily slowed  
-- This period also marks a shift from aggressive expansion to content optimization strategies  
+Movies dominate the content library, indicating a strategy focused on high-volume content acquisition. TV Shows, though fewer, show steady growth over time.
 
----
+### Genre Distribution
 
-## Business Insights & Strategic Recommendations
+International Movies and Dramas are among the most common genres, highlighting Netflix’s global content strategy.
 
-- Transition from expansion to content optimization post-2020  
-- Maintain a balanced portfolio to support both user acquisition (Movies) and retention (TV Shows)  
-- Invest in region-specific content to align with local preferences  
-- Expand TV Show production in high-retention markets  
-- Use genre and rating insights for targeted content development  
+### Ratings Distribution
+
+The platform primarily targets mature audiences, with TV-MA and TV-14 being the most frequent ratings.
+
+### Country Analysis
+
+The United States leads in content production, followed by countries like India and the United Kingdom. Content trends vary significantly across regions.
 
 ---
 
-## Tech Stack
+## Key Insights
 
-- Python  
-- Pandas  
-- NumPy  
-- Matplotlib  
-- Seaborn  
-- Jupyter Notebook  
-
----
-
-## Project Structure
-
-Netflix-Content-Strategy-Analysis/
-│
-├── data/                # Dataset  
-├── notebooks/           # Jupyter Notebook (analysis)  
-├── images/              # Generated visualizations  
-├── presentation/        # Final PPT/PDF  
-└── README.md  
+* Netflix followed an aggressive expansion strategy between 2016 and 2019
+* Content growth stabilized after 2020, influenced by external factors such as COVID-19
+* Movies dominate in volume, supporting user acquisition strategies
+* TV Shows contribute to long-term engagement and retention
+* Content distribution varies significantly by country, emphasizing localization
 
 ---
 
-## How to Run
+## Business Recommendations
 
-1. Clone the repository  
-2. Install required dependencies  
-3. Open the Jupyter Notebook  
-4. Run all cells to reproduce analysis and visualizations  
+* Maintain strong movie production to support user acquisition
+* Increase investment in high-quality TV Shows to improve retention
+* Focus on localized content strategies in key international markets
+* Optimize content mix in mature markets where growth has slowed
+* Build resilience in content production to handle disruptions like COVID-19
 
 ---
 
 ## Limitations
 
-- Dataset does not include user-level behavior (watch time, preferences)  
-- Analysis is based on metadata rather than engagement metrics  
-- External factors like production delays are inferred, not directly measured  
+* The dataset represents content availability (supply-side) rather than user behavior (demand-side)
+* No data on user engagement, watch time, or preferences
+* Insights about audience behavior are inferred indirectly and should be interpreted with caution
 
 ---
 
-## Future Work
+## Conclusion
 
-- Build a recommendation system using content similarity  
-- Perform user segmentation analysis  
-- Apply machine learning models for content success prediction  
-- Extend analysis to compare multiple streaming platforms  
+Netflix has transitioned from rapid expansion to a more optimized content strategy. While movies dominate the platform, TV Shows play a crucial role in retention. Future growth will depend on balancing content types, strengthening localization, and adapting to external disruptions.
+
+---
+
+## Tools & Technologies
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Jupyter Notebook
+
+---
+
+## Project Structure
+
+* `netflix-dataset-eda.ipynb` → Full analysis notebook
+* `presentation.pdf` → Business insights and strategy slides
+* `README.md` → Project documentation
 
 ---
 
 ## Author
 
-Amee Ghai  
-BS Physics, IIT Jodhpur  
-Interested in Data Analysis, Quantum Technologies, and Computational Research  
-
----
-
-## Final Note
-
-This project combines data analysis with business interpretation to provide a holistic view of Netflix’s content strategy. It demonstrates the ability to translate raw data into actionable insights, making it relevant for data analytics, business analysis, and strategy-oriented roles.
+Amee Ghai
+B.S. Physics, IIT Jodhpur
+Interested in Business Analytics, Data Analysis, and Strategy
